@@ -2236,6 +2236,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "my_project"
+version = "0.1.0"
+dependencies = [
+ "helius",
+ "lazy_static",
+ "solana-client",
+ "solana-sdk",
+ "tokio",
+]
+
+[[package]]
 name = "native-tls"
 version = "0.2.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4285,17 +4296,6 @@ dependencies = [
  "solana-rpc-client",
  "solana-sdk",
  "thiserror 1.0.69",
-]
-
-[[package]]
-name = "solana-rust"
-version = "0.1.0"
-dependencies = [
- "helius",
- "lazy_static",
- "solana-client",
- "solana-sdk",
- "tokio",
 ]
 
 [[package]]

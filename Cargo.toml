@@ -1,5 +1,5 @@
 [package]
-name = "solana-rust"
+name = "my_project"
 version = "0.1.0"
 authors = ["runner"]
 edition = "2021"

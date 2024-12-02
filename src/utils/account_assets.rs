@@ -1,6 +1,4 @@
-mod clients;
-
-use clients::helius_client::HELIUS_CLIENT;
+use crate::clients::helius_client::HELIUS_CLIENT;
 
 use helius::error::Result;
 use helius::types::*;
