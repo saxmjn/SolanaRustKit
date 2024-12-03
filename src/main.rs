@@ -1,3 +1,6 @@
+mod constants;
+use constants::*;
+
 // use my_project::utils::account_assets::get_account_assets;
 // use my_project::utils::parse_transaction::get_transaction;
 // use my_project::utils::account_parse_transactions::get_transactions_history;
@@ -6,20 +9,13 @@ use my_project::wallet::index::Wallet;
 // use my_project::utils::send_transaction::send_transaction;
 
 fn main() {
-  let _transaction = "SAMPLE_TRANSACTION";
-  let _address = "2k5AXX4guW9XwRQ1AKCpAuUqgWDpQpwFfpVFh3hnm2Ha";
-  let _before = Some("SAMPLE_TRANSACTION_VALUE_BEFORE");
-  let _amount = 100_000;
-  let _tip = 10_000;
-  let _to_address = "RECIPIENT_ADDRESS_HERE";
+  let _wallet = Wallet::load_from_bytes(constants::_ACC_PRIVATE_KEY_BYTES);
 
-  let _wallet = Wallet::load_from_bytes(b"YOUR_PRIVATE_KEY_HERE");
 
-  
   println!("Hello, world!");
-  // let _ = get_account_assets(_address);
-  // let _ = get_transactions_history(_address,_before);
-  // let _ = get_transaction(_transaction);
+  // let _ = get_account_assets(constants::_SAMPLE_ADDRESS);
+  // let _ = get_transactions_history(constants::_SAMPLE_ADDRESS,_BEFORE_TXN);
+  // let _ = get_transaction(constants::_SAMPLE_TXN);
   // let _ = get_block_hash();
-  // let _ = send_transaction(_to_address, _amount, _tip);
+  // let _ = send_transaction(constants::_TO_ADDRESS, constants::_AMOUNT, constants::_TIP);
 }
