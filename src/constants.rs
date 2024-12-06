@@ -5,3 +5,4 @@ pub const _AMOUNT: u64 = 100_000; // Amount in LAMPORTS
 pub const _TIP: u64 = 10_000; // Amount in LAMPORTS
 pub const _TO_ADDRESS: &str = "RECIPIENT_ADDRESS_HERE";
 pub const _ACC_PRIVATE_KEY_BYTES: &[u8] = b"YOUR_PRIVATE_KEY_HERE";
+pub const HELIUS_KEY: &str = "YOUR_API_KEY";
