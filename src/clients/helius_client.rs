@@ -13,6 +13,6 @@ lazy_static! {
 
 fn create_helius_client() -> Helius {
     let api_key: &str = "YOUR_API_KEY";
-    let cluster: Cluster = Cluster::MainnetBeta;
+    let cluster: Cluster = Cluster::Devnet;
     Helius::new(api_key, cluster).unwrap()
 }
